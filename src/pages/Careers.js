@@ -5,7 +5,7 @@ function Careers() {
     <div>
       <div className="page-header">
         <div className="container">
-          <h1>Careers at Oneness Infratech</h1>
+          <h1>Careers at Udugiri Infratech</h1>
           <p>Join Our Team of Innovators and Professionals</p>
         </div>
       </div>
@@ -15,7 +15,7 @@ function Careers() {
           <div className="content-section">
             <h2>Build Your Career With Us</h2>
             <p>
-              At Oneness Infratech, we recognize that our greatest asset is our people. We are constantly seeking 
+              At Udugiri Infratech, we recognize that our greatest asset is our people. We are constantly seeking 
               talented, motivated individuals who share our passion for excellence and innovation in infrastructure 
               and technology services. If you're looking for a career that offers professional growth, challenging 
               projects, and the opportunity to make a meaningful impact, we invite you to explore opportunities 
@@ -30,7 +30,7 @@ function Careers() {
           </div>
 
           <div className="content-section">
-            <h2>Why Work With Oneness Infratech?</h2>
+            <h2>Why Work With Udugiri Infratech?</h2>
             <div className="cards-grid">
               <div className="card">
                 <h3>Professional Growth</h3>
@@ -80,7 +80,7 @@ function Careers() {
           <div className="content-section">
             <h2>Our Work Culture</h2>
             <p>
-              Oneness Infratech fosters a culture built on core values of integrity, excellence, innovation, and 
+              Udugiri Infratech fosters a culture built on core values of integrity, excellence, innovation, and 
               collaboration. We believe in:
             </p>
             <ul>
@@ -167,7 +167,7 @@ function Careers() {
           <div className="content-section">
             <h2>Application Process</h2>
             <p>
-              If you're interested in joining Oneness Infratech, please follow these steps:
+              If you're interested in joining Udugiri Infratech, please follow these steps:
             </p>
             <ul>
               <li><strong>Review Opportunities:</strong> Identify positions that match your qualifications and career interests</li>
@@ -213,7 +213,7 @@ function Careers() {
           <div className="content-section">
             <h2>Join Us in Shaping the Future</h2>
             <p>
-              At Oneness Infratech, every team member plays a vital role in our success and growth. We're not just 
+              At Udugiri Infratech, every team member plays a vital role in our success and growth. We're not just 
               offering jobs; we're providing careers where you can develop your skills, contribute to meaningful 
               projects, and be part of an organization that values your potential. If you're ready to take the next 
               step in your professional journey, we look forward to hearing from you.

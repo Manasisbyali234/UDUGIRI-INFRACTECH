@@ -9,7 +9,7 @@ function Header() {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <img src="/logo.jpg" alt="Oneness Infratech" />
+            <img src="/logo.jpg" alt="Udugiri Infratech" />
           </div>
           <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
             <span></span>

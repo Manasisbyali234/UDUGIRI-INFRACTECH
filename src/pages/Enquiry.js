@@ -44,7 +44,7 @@ function Enquiry() {
           <div className="content-section">
             <h2>Connect With Us</h2>
             <p>
-              At Oneness Infratech, we believe every successful project begins with clear communication and 
+              At Udugiri Infratech, we believe every successful project begins with clear communication and 
               understanding. Whether you're planning a large-scale infrastructure initiative, need specialized 
               surveying services, require GIS solutions, or seek custom software development, our team is ready 
               to assist you.

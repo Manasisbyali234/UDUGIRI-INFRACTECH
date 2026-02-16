@@ -38,11 +38,11 @@ function Contact() {
       <section className="page-section">
         <div className="container">
           <div className="content-section">
-            <h2>Connect With Oneness Infratech</h2>
+            <h2>Connect With Udugiri Infratech</h2>
             <p>
               We value open communication and are committed to providing prompt, helpful responses to all inquiries. 
               Whether you have questions about our services, need technical support, want to discuss a potential 
-              project, or simply wish to learn more about Oneness Infratech, our team is ready to assist you.
+              project, or simply wish to learn more about Udugiri Infratech, our team is ready to assist you.
             </p>
             <p>
               Choose the communication method that works best for you, and we'll ensure your message reaches the 
@@ -56,7 +56,7 @@ function Contact() {
               <div className="card">
                 <h3>Corporate Office</h3>
                 <p><strong>Address:</strong></p>
-                <p>Oneness Infratech</p>
+                <p>Udugiri Infratech</p>
                 <p>[Street Address]</p>
                 <p>[City, State - PIN Code]</p>
                 <p>[Country]</p>
@@ -194,7 +194,7 @@ function Contact() {
           <div className="content-section">
             <h2>Response Time and Communication</h2>
             <p>
-              At Oneness Infratech, we prioritize timely communication. Here's what you can expect:
+              At Udugiri Infratech, we prioritize timely communication. Here's what you can expect:
             </p>
             <ul>
               <li><strong>Email Inquiries:</strong> Responses typically within 24-48 business hours</li>
@@ -207,7 +207,7 @@ function Contact() {
           <div className="content-section">
             <h2>Social Media</h2>
             <p>
-              Stay connected with Oneness Infratech through our social media channels for updates, industry insights, 
+              Stay connected with Udugiri Infratech through our social media channels for updates, industry insights, 
               and company news:
             </p>
             <ul>
@@ -221,7 +221,7 @@ function Contact() {
             <h2>Feedback and Suggestions</h2>
             <p>
               We continuously strive to improve our services and client experience. If you have feedback, suggestions, 
-              or testimonials about your experience working with Oneness Infratech, we'd love to hear from you. 
+              or testimonials about your experience working with Udugiri Infratech, we'd love to hear from you. 
               Please send your thoughts to feedback@oitech.co.in
             </p>
           </div>

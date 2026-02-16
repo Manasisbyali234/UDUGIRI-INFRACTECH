@@ -1,6 +1,6 @@
-# Oneness Infratech Website
+# Udugiri Infratech Website
 
-A professional React-based website for Oneness Infratech, showcasing infrastructure and technology services.
+A professional React-based website for Udugiri Infratech, showcasing infrastructure and technology services.
 
 ## Features
 
@@ -101,4 +101,4 @@ To customize the website content:
 
 ## License
 
-© 2024 Oneness Infratech. All rights reserved.
+© 2024 Udugiri Infratech. All rights reserved.

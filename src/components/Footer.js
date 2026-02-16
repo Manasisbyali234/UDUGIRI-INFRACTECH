@@ -7,8 +7,8 @@ function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <img src="/logo.jpg" alt="Oneness Infratech" className="footer-logo" />
-            <h3>Oneness Infratech</h3>
+            <img src="/logo.jpg" alt="Udugiri Infratech" className="footer-logo" />
+            <h3>Udugiri Infratech</h3>
             <p>Delivering excellence in infrastructure and technology solutions with precision and innovation.</p>
           </div>
           <div className="footer-section">
@@ -26,7 +26,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 Oneness Infratech. All rights reserved.</p>
+          <p>&copy; 2024 Udugiri Infratech. All rights reserved.</p>
         </div>
       </div>
     </footer>

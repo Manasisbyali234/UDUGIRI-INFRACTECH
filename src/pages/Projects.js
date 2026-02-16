@@ -15,7 +15,7 @@ function Projects() {
           <div className="content-section">
             <h2>Project Portfolio Overview</h2>
             <p>
-              Oneness Infratech has successfully executed numerous projects across various sectors, demonstrating 
+              Udugiri Infratech has successfully executed numerous projects across various sectors, demonstrating 
               our versatility, technical competence, and commitment to quality. Our project portfolio spans 
               government infrastructure initiatives, private development projects, industrial facilities, and 
               technology implementations, each reflecting our ability to deliver results that meet or exceed 
@@ -114,7 +114,7 @@ function Projects() {
           <div className="content-section">
             <h2>Our Project Approach</h2>
             <p>
-              Every project undertaken by Oneness Infratech follows a structured methodology designed to ensure 
+              Every project undertaken by Udugiri Infratech follows a structured methodology designed to ensure 
               successful outcomes:
             </p>
             <ul>

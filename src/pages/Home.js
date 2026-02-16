@@ -6,7 +6,7 @@ function Home() {
     <div>
       <section className="hero" style={{ backgroundImage: 'url(/istockphoto-1333158315-612x612.jpg)' }}>
         <div className="container">
-          <h1>Oneness Infratech</h1>
+          <h1>Udugiri Infratech</h1>
           <h1>Building Tomorrow's Infrastructure Today</h1>
           <p>Your Trusted Partner in Surveying, GIS, Engineering & Technology Solutions</p>
           <Link to="/enquiry">
@@ -18,9 +18,9 @@ function Home() {
       <section className="page-section">
         <div className="container">
           <div className="content-section">
-            <h2>Welcome to Oneness Infratech</h2>
+            <h2>Welcome to Udugiri Infratech</h2>
             <p>
-              Oneness Infratech stands as a premier provider of comprehensive infrastructure and technology solutions, 
+              Udugiri Infratech stands as a premier provider of comprehensive infrastructure and technology solutions, 
               delivering exceptional services across surveying, geographic information systems, civil engineering, and 
               software development. With a commitment to precision and innovation, we transform complex challenges into 
               streamlined solutions that drive progress and efficiency.
@@ -68,7 +68,7 @@ function Home() {
           </div>
 
           <div className="content-section">
-            <h2>Why Choose Oneness Infratech</h2>
+            <h2>Why Choose Udugiri Infratech</h2>
             <ul>
               <li>Comprehensive end-to-end project management and execution capabilities</li>
               <li>Proven track record of successful project delivery across multiple domains</li>
@@ -83,7 +83,7 @@ function Home() {
           <div className="content-section">
             <h2>Our Value Proposition</h2>
             <p>
-              At Oneness Infratech, we understand that infrastructure development and technological advancement 
+              At Udugiri Infratech, we understand that infrastructure development and technological advancement 
               require partners who can deliver precision, reliability, and innovation. Our integrated service 
               portfolio enables clients to access multiple specialized services under one roof, streamlining 
               project coordination and ensuring consistency across all deliverables.

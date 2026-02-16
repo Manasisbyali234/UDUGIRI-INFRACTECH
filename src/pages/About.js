@@ -5,7 +5,7 @@ function About() {
     <div>
       <div className="page-header">
         <div className="container">
-          <h1>About Oneness Infratech</h1>
+          <h1>About Udugiri Infratech</h1>
           <p>Pioneering Excellence in Infrastructure and Technology</p>
         </div>
       </div>
@@ -15,7 +15,7 @@ function About() {
           <div className="content-section">
             <h2>Company Overview</h2>
             <p>
-              Oneness Infratech has established itself as a distinguished organization specializing in providing 
+              Udugiri Infratech has established itself as a distinguished organization specializing in providing 
               comprehensive infrastructure and technology solutions. Founded with a vision to bridge the gap between 
               traditional engineering practices and modern technological advancements, we have grown into a trusted 
               partner for organizations seeking reliable, accurate, and innovative services.
@@ -28,7 +28,7 @@ function About() {
               infrastructure development and technological progress.
             </p>
             <p>
-              Operating at the intersection of engineering precision and digital innovation, Oneness Infratech serves 
+              Operating at the intersection of engineering precision and digital innovation, Udugiri Infratech serves 
               a wide spectrum of clients including government departments, municipal corporations, private developers, 
               and industrial enterprises. Our ability to understand complex requirements and translate them into 
               practical, efficient solutions has earned us recognition as a reliable service provider in the industry.
@@ -114,7 +114,7 @@ function About() {
           <div className="content-section">
             <h2>Our Approach</h2>
             <p>
-              At Oneness Infratech, we follow a systematic, client-centric approach that ensures successful project 
+              At Udugiri Infratech, we follow a systematic, client-centric approach that ensures successful project 
               execution from conception to completion. Our methodology encompasses:
             </p>
             <ul>
@@ -130,7 +130,7 @@ function About() {
           <div className="content-section">
             <h2>Our Team</h2>
             <p>
-              The strength of Oneness Infratech lies in our talented team of professionals who bring together 
+              The strength of Udugiri Infratech lies in our talented team of professionals who bring together 
               diverse skills, extensive experience, and unwavering commitment to excellence. Our workforce includes 
               licensed surveyors, GIS specialists, civil engineers, software developers, and project managers who 
               collaborate seamlessly to deliver integrated solutions.
