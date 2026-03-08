@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Enquiry() {
   const [formData, setFormData] = useState({
@@ -9,6 +9,10 @@ function Enquiry() {
     service: '',
     message: ''
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleChange = (e) => {
     setFormData({

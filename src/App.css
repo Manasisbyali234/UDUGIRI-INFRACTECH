@@ -319,6 +319,54 @@ nav a:hover {
   background-color: #f0f0f0;
 }
 
+.about-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  display: block;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.image-text-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.image-text-layout.reverse {
+  flex-direction: row-reverse;
+}
+
+.side-image {
+  width: 45%;
+  min-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.text-content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .image-text-layout,
+  .image-text-layout.reverse {
+    flex-direction: column;
+  }
+  
+  .side-image {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .service-image {
     height: 150px;

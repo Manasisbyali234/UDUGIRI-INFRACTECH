@@ -14,53 +14,68 @@ function About() {
         <div className="container">
           <div className="content-section">
             <h2>Company Overview</h2>
-            <p>
-              Udugiri Infratech has established itself as a distinguished organization specializing in providing 
-              comprehensive infrastructure and technology solutions. Founded with a vision to bridge the gap between 
-              traditional engineering practices and modern technological advancements, we have grown into a trusted 
-              partner for organizations seeking reliable, accurate, and innovative services.
-            </p>
-            <p>
-              Our journey reflects a steadfast commitment to excellence, driven by a team of dedicated professionals 
-              who bring together diverse expertise in surveying, geographic information systems, civil engineering, 
-              and software development. Through strategic investments in technology, continuous skill development, 
-              and unwavering focus on quality, we have successfully delivered numerous projects that contribute to 
-              infrastructure development and technological progress.
-            </p>
-            <p>
-              Operating at the intersection of engineering precision and digital innovation, Udugiri Infratech serves 
-              a wide spectrum of clients including government departments, municipal corporations, private developers, 
-              and industrial enterprises. Our ability to understand complex requirements and translate them into 
-              practical, efficient solutions has earned us recognition as a reliable service provider in the industry.
-            </p>
+            <div className="image-text-layout">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop" alt="Company Overview" className="side-image" />
+              <div className="text-content">
+                <p>
+                  Udugiri Infratech has established itself as a distinguished organization specializing in providing 
+                  comprehensive infrastructure and technology solutions. Founded with a vision to bridge the gap between 
+                  traditional engineering practices and modern technological advancements, we have grown into a trusted 
+                  partner for organizations seeking reliable, accurate, and innovative services.
+                </p>
+                <p>
+                  Our journey reflects a steadfast commitment to excellence, driven by a team of dedicated professionals 
+                  who bring together diverse expertise in surveying, geographic information systems, civil engineering, 
+                  and software development. Through strategic investments in technology, continuous skill development, 
+                  and unwavering focus on quality, we have successfully delivered numerous projects that contribute to 
+                  infrastructure development and technological progress.
+                </p>
+                <p>
+                  Operating at the intersection of engineering precision and digital innovation, Udugiri Infratech serves 
+                  a wide spectrum of clients including government departments, municipal corporations, private developers, 
+                  and industrial enterprises. Our ability to understand complex requirements and translate them into 
+                  practical, efficient solutions has earned us recognition as a reliable service provider in the industry.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="content-section">
             <h2>Our Vision</h2>
-            <p>
-              To emerge as a leading organization in infrastructure and technology services, recognized nationally 
-              and internationally for delivering innovative, sustainable, and high-quality solutions that contribute 
-              to societal development and economic growth. We envision a future where our expertise enables seamless 
-              integration of traditional engineering excellence with cutting-edge digital technologies, setting new 
-              benchmarks in service delivery and client satisfaction.
-            </p>
+            <div className="image-text-layout reverse">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop" alt="Our Vision" className="side-image" />
+              <div className="text-content">
+                <p>
+                  To emerge as a leading organization in infrastructure and technology services, recognized nationally 
+                  and internationally for delivering innovative, sustainable, and high-quality solutions that contribute 
+                  to societal development and economic growth. We envision a future where our expertise enables seamless 
+                  integration of traditional engineering excellence with cutting-edge digital technologies, setting new 
+                  benchmarks in service delivery and client satisfaction.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="content-section">
             <h2>Our Mission</h2>
-            <p>
-              Our mission is to provide comprehensive, accurate, and timely infrastructure and technology solutions 
-              that empower our clients to make informed decisions and achieve their project objectives efficiently. 
-              We are committed to:
-            </p>
-            <ul>
-              <li>Delivering services with uncompromising quality and precision</li>
-              <li>Embracing technological innovation to enhance service capabilities</li>
-              <li>Building long-term partnerships based on trust, transparency, and mutual growth</li>
-              <li>Fostering a culture of continuous learning and professional development</li>
-              <li>Contributing to sustainable infrastructure development practices</li>
-              <li>Maintaining ethical business practices and corporate responsibility</li>
-            </ul>
+            <div className="image-text-layout">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop" alt="Our Mission" className="side-image" />
+              <div className="text-content">
+                <p>
+                  Our mission is to provide comprehensive, accurate, and timely infrastructure and technology solutions 
+                  that empower our clients to make informed decisions and achieve their project objectives efficiently. 
+                  We are committed to:
+                </p>
+                <ul>
+                  <li>Delivering services with uncompromising quality and precision</li>
+                  <li>Embracing technological innovation to enhance service capabilities</li>
+                  <li>Building long-term partnerships based on trust, transparency, and mutual growth</li>
+                  <li>Fostering a culture of continuous learning and professional development</li>
+                  <li>Contributing to sustainable infrastructure development practices</li>
+                  <li>Maintaining ethical business practices and corporate responsibility</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div className="content-section">
@@ -129,18 +144,23 @@ function About() {
 
           <div className="content-section">
             <h2>Our Team</h2>
-            <p>
-              The strength of Udugiri Infratech lies in our talented team of professionals who bring together 
-              diverse skills, extensive experience, and unwavering commitment to excellence. Our workforce includes 
-              licensed surveyors, GIS specialists, civil engineers, software developers, and project managers who 
-              collaborate seamlessly to deliver integrated solutions.
-            </p>
-            <p>
-              We invest significantly in training and development, ensuring our team remains updated with the latest 
-              industry trends, technological advancements, and best practices. This commitment to continuous learning 
-              enables us to maintain our competitive edge and deliver innovative solutions that address evolving 
-              client requirements.
-            </p>
+            <div className="image-text-layout reverse">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=400&fit=crop" alt="Our Team" className="side-image" />
+              <div className="text-content">
+                <p>
+                  The strength of Udugiri Infratech lies in our talented team of professionals who bring together 
+                  diverse skills, extensive experience, and unwavering commitment to excellence. Our workforce includes 
+                  licensed surveyors, GIS specialists, civil engineers, software developers, and project managers who 
+                  collaborate seamlessly to deliver integrated solutions.
+                </p>
+                <p>
+                  We invest significantly in training and development, ensuring our team remains updated with the latest 
+                  industry trends, technological advancements, and best practices. This commitment to continuous learning 
+                  enables us to maintain our competitive edge and deliver innovative solutions that address evolving 
+                  client requirements.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
