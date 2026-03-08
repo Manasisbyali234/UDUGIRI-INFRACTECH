@@ -195,8 +195,8 @@ function Enquiry() {
               Prefer to reach us directly? You can also contact us through the following channels:
             </p>
             <ul>
-              <li><strong>Email:</strong> info@oitech.co.in</li>
-              <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
+              <li><strong>Email:</strong> udugiriengineer@gmail.com</li>
+              <li><strong>Phone:</strong> +91-7899213066/9731981092</li>
               <li><strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 6:00 PM</li>
             </ul>
             <p>

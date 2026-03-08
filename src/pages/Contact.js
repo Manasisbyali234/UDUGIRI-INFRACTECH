@@ -57,27 +57,26 @@ function Contact() {
                 <h3>Corporate Office</h3>
                 <p><strong>Address:</strong></p>
                 <p>Udugiri Infratech</p>
-                <p>[Street Address]</p>
-                <p>[City, State - PIN Code]</p>
-                <p>[Country]</p>
+                <p>#196, 1st Cross Link Road</p>
+                <p>Malleshwaram</p>
+                <p>Bangalore - 560003</p>
+                <p>India</p>
               </div>
               <div className="card">
                 <h3>Email</h3>
                 <p><strong>General Inquiries:</strong></p>
-                <p>info@oitech.co.in</p>
+                <p>udugiriengineer@gmail.com</p>
                 <p><strong>Business Development:</strong></p>
-                <p>business@oitech.co.in</p>
+                <p>udugiriengineer@gmail.com</p>
                 <p><strong>Career Opportunities:</strong></p>
-                <p>careers@oitech.co.in</p>
+                <p>udugiriengineer@gmail.com</p>
               </div>
               <div className="card">
                 <h3>Phone</h3>
                 <p><strong>Main Office:</strong></p>
-                <p>+91-XXXXXXXXXX</p>
+                <p>+91-7899213066/9731981092</p>
                 <p><strong>Alternative:</strong></p>
-                <p>+91-XXXXXXXXXX</p>
-                <p><strong>Fax:</strong></p>
-                <p>+91-XXXXXXXXXX</p>
+                <p>7899213066/9731981092</p>
               </div>
               <div className="card">
                 <h3>Business Hours</h3>
@@ -98,25 +97,25 @@ function Contact() {
             <p>
               For questions about ongoing projects, project status updates, or technical clarifications related to 
               active engagements, please contact your designated project manager or reach out to our project 
-              coordination team at projects@oitech.co.in
+              coordination team at udugiriengineer@gmail.com
             </p>
 
             <h3>Technical Support</h3>
             <p>
               If you require technical assistance with software applications, GIS systems, or other technology 
-              solutions provided by us, our technical support team is available at support@oitech.co.in
+              solutions provided by us, our technical support team is available at udugiriengineer@gmail.com
             </p>
 
             <h3>Business Partnerships</h3>
             <p>
               Organizations interested in exploring partnership opportunities, collaborations, or vendor relationships 
-              can contact our business development team at partnerships@oitech.co.in
+              can contact our business development team at udugiriengineer@gmail.com
             </p>
 
             <h3>Media and Press</h3>
             <p>
               For media inquiries, press releases, or interview requests, please contact our communications team at 
-              media@oitech.co.in
+              udugiriengineer@gmail.com
             </p>
           </div>
 
@@ -222,7 +221,7 @@ function Contact() {
             <p>
               We continuously strive to improve our services and client experience. If you have feedback, suggestions, 
               or testimonials about your experience working with Udugiri Infratech, we'd love to hear from you. 
-              Please send your thoughts to feedback@oitech.co.in
+              Please send your thoughts to udugiriengineer@gmail.com
             </p>
           </div>
 

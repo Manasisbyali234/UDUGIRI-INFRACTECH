@@ -21,8 +21,8 @@ function Footer() {
           <div className="footer-section">
             <h3>Contact</h3>
             <p>Email: udugiriengineer@gmail.com</p>
-            <p>Phone: 78992 13066</p>
-            <p>Address: [Your Address]</p>
+            <p>Phone: 7899213066/9731981092/9731981092</p>
+            <p>Address: #196, 1st Cross Link Road, Malleshwaram, Bangalore - 560003</p>
           </div>
         </div>
         <div className="footer-bottom">
