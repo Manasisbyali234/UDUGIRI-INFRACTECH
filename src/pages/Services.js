@@ -54,6 +54,32 @@ function Services() {
             </div>
           </div>
 
+          <div className="content-section highlighted-section">
+            <h2 className="section-title-center">Technical Expertise & Integrated Services</h2>
+            <div className="cards-grid">
+              <div className="card">
+                <h3>Engineering & Consulting</h3>
+                <p>Provides integrated engineering and consulting services for transportation, energy, water, and urban infrastructure projects.</p>
+              </div>
+              <div className="card">
+                <h3>Transportation Infrastructure</h3>
+                <p>Specializes in road and highway engineering, traffic management, and infrastructure operations.</p>
+              </div>
+              <div className="card">
+                <h3>Urban Mobility</h3>
+                <p>Supports railway and metro system planning, design, and engineering for urban mobility solutions.</p>
+              </div>
+              <div className="card">
+                <h3>Sustainable Solutions</h3>
+                <p>Develops water supply, wastewater treatment, and environmental engineering solutions for sustainable infrastructure.</p>
+              </div>
+              <div className="card">
+                <h3>Smart City & Urban Planning</h3>
+                <p>Delivers airport, port, and smart city planning along with building and urban development engineering services.</p>
+              </div>
+            </div>
+          </div>
+
           <div className="content-section">
             <h2>Surveying Services</h2>
             <p>
@@ -220,8 +246,28 @@ function Services() {
             </p>
           </div>
 
+          <div className="content-section highlighted-section">
+            <h2 className="section-title-center">Core Service Offerings</h2>
+            <div className="services-highlight-grid">
+              <div className="service-tag">Building Designs</div>
+              <div className="service-tag">GPS / Total Station Survey</div>
+              <div className="service-tag">Software Development</div>
+              <div className="service-tag">GIS Based Ward Delimitation</div>
+              <div className="service-tag">Construction</div>
+              <div className="service-tag">DPR for Water Supply</div>
+              <div className="service-tag">Layout Designs</div>
+              <div className="service-tag">Roads & Drains</div>
+              <div className="service-tag">DGPS Survey</div>
+              <div className="service-tag">GIS Based Master Plan</div>
+              <div className="service-tag">Bridges / Culverts</div>
+              <div className="service-tag">Layout Development</div>
+              <div className="service-tag">UGD / Storm Water Drains</div>
+              <div className="service-tag">GIS Projects</div>
+            </div>
+          </div>
+
           <div className="content-section">
-            <h2>Core Service Offerings</h2>
+            <h2>Detailed Service Categories</h2>
             <div className="cards-grid">
               <div className="card">
                 <h3>Urban Planning & GIS-Based Master Planning</h3>

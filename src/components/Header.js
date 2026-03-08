@@ -1,11 +1,32 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    if (isHome) {
+      window.addEventListener('scroll', handleScroll);
+    } else {
+      setScrolled(false); // Reset scrolled state if not on home
+    }
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isHome]);
 
   return (
-    <header>
+    <header className={`${scrolled || !isHome ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="header-content">
           <div className="logo">

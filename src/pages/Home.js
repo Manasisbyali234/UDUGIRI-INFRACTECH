@@ -67,6 +67,26 @@ function Home() {
             </div>
           </div>
 
+          <div className="content-section highlighted-section">
+            <h2 className="section-title-center">Services Offered</h2>
+            <div className="services-highlight-grid">
+              <div className="service-tag">Building Designs</div>
+              <div className="service-tag">GPS / Total Station Survey</div>
+              <div className="service-tag">Software Development</div>
+              <div className="service-tag">GIS Based Ward Delimitation</div>
+              <div className="service-tag">Construction</div>
+              <div className="service-tag">DPR for Water Supply</div>
+              <div className="service-tag">Layout Designs</div>
+              <div className="service-tag">Roads & Drains</div>
+              <div className="service-tag">DGPS Survey</div>
+              <div className="service-tag">GIS Based Master Plan</div>
+              <div className="service-tag">Bridges / Culverts</div>
+              <div className="service-tag">Layout Development</div>
+              <div className="service-tag">UGD / Storm Water Drains</div>
+              <div className="service-tag">GIS Projects</div>
+            </div>
+          </div>
+
           <div className="content-section">
             <h2>Why Choose Udugiri Infratech</h2>
             <ul>
