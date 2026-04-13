@@ -1,4 +1,86 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+
+const CAPABILITIES = [
+  {
+    icon: '🏛️',
+    title: 'Government Projects',
+    text: 'Extensive experience with government departments on infrastructure development, urban planning, and resource management. Our compliance expertise ensures smooth execution across all regulatory frameworks.',
+    points: ['Public Works & Municipal', 'Regulatory Compliance', 'Urban Planning Support'],
+    color: '#2563eb',
+  },
+  {
+    icon: '🏗️',
+    title: 'Private Sector Developments',
+    text: 'End-to-end collaboration with private developers and industrial enterprises on residential, commercial, and industrial projects — from initial surveys to final documentation.',
+    points: ['Real Estate & Industrial', 'Full-cycle Delivery', 'As-built Documentation'],
+    color: '#0891b2',
+  },
+  {
+    icon: '🗺️',
+    title: 'Infrastructure Mapping',
+    text: 'Large-scale GIS and survey mapping for roads, railways, utilities, and municipal infrastructure — enabling accurate asset documentation and future development planning.',
+    points: ['Roads & Railways', 'Utility Networks', 'GIS Asset Management'],
+    color: '#059669',
+  },
+  {
+    icon: '💻',
+    title: 'Technology Implementation',
+    text: 'Custom software and system integration projects that digitize operations, automate workflows, and enhance organizational efficiency with modern technology solutions.',
+    points: ['Custom Software', 'Workflow Automation', 'System Integration'],
+    color: '#7c3aed',
+  },
+];
+
+function ExecutionCapabilities() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const items = sectionRef.current?.querySelectorAll('.exec-item');
+    if (!items) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('exec-item--visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    items.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div className="exec-list" ref={sectionRef}>
+      {CAPABILITIES.map((cap, i) => (
+        <div
+          className="exec-item"
+          key={cap.title}
+          style={{ '--delay': `${i * 0.13}s`, '--accent': cap.color }}
+        >
+          <div className="exec-item-left">
+            <div className="exec-num">0{i + 1}</div>
+            <div className="exec-connector" />
+          </div>
+          <div className="exec-item-body">
+            <div className="exec-item-header">
+              <span className="exec-item-icon">{cap.icon}</span>
+              <h3>{cap.title}</h3>
+            </div>
+            <p>{cap.text}</p>
+            <ul className="exec-points">
+              {cap.points.map((pt) => (
+                <li key={pt}>{pt}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 function Projects() {
   return (
@@ -6,13 +88,14 @@ function Projects() {
       <div className="page-header">
         <div className="container">
           <h1>Our Projects</h1>
-          <p>Delivering Excellence Across Diverse Infrastructure Initiatives</p>
+          <p>Delivering excellence across diverse infrastructure initiatives</p>
         </div>
       </div>
 
       <section className="page-section">
         <div className="container">
           <div className="content-section">
+            <span className="section-label">Our Work</span>
             <h2>Project Portfolio Overview</h2>
             <p>
               Udugiri Infratech has successfully executed numerous projects across various sectors, demonstrating 
@@ -30,40 +113,9 @@ function Projects() {
           </div>
 
           <div className="content-section">
+            <span className="section-label">Capabilities</span>
             <h2>Project Execution Capabilities</h2>
-            <div className="cards-grid">
-              <div className="card">
-                <h3>Government Projects</h3>
-                <p>
-                  Extensive experience working with government departments and public sector organizations on 
-                  infrastructure development, urban planning, and resource management initiatives. Our understanding 
-                  of regulatory requirements and compliance standards ensures smooth project execution.
-                </p>
-              </div>
-              <div className="card">
-                <h3>Private Sector Developments</h3>
-                <p>
-                  Collaboration with private developers, real estate companies, and industrial enterprises on 
-                  residential, commercial, and industrial projects. We provide comprehensive services from initial 
-                  surveys to final documentation.
-                </p>
-              </div>
-              <div className="card">
-                <h3>Infrastructure Mapping</h3>
-                <p>
-                  Large-scale mapping projects for roads, railways, utilities, and municipal infrastructure. Our 
-                  GIS and surveying expertise enables accurate documentation of existing assets and planning for 
-                  future development.
-                </p>
-              </div>
-              <div className="card">
-                <h3>Technology Implementation</h3>
-                <p>
-                  Software development and system integration projects that digitize operations, automate workflows, 
-                  and enhance organizational efficiency through custom technology solutions.
-                </p>
-              </div>
-            </div>
+            <ExecutionCapabilities />
           </div>
 
           <div className="content-section">

@@ -1,4 +1,48 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+
+const WHY_CARDS = [
+  { icon: '📈', title: 'Professional Growth', text: 'Access to continuous learning opportunities, skill development programs, and exposure to diverse projects that enhance your professional capabilities and career trajectory.' },
+  { icon: '🚀', title: 'Innovative Projects', text: 'Work on cutting-edge infrastructure and technology initiatives that challenge conventional approaches and allow you to apply the latest tools and methodologies.' },
+  { icon: '🤝', title: 'Collaborative Culture', text: 'Be part of a team-oriented environment where knowledge sharing, mutual respect, and collective problem-solving drive success and create a positive workplace atmosphere.' },
+  { icon: '💰', title: 'Competitive Compensation', text: 'Receive fair, market-competitive remuneration packages that recognize your skills, experience, and contributions to organizational success.' },
+  { icon: '⚖️', title: 'Work-Life Balance', text: 'Enjoy policies and practices that support healthy work-life integration, understanding that personal well-being contributes to professional excellence.' },
+  { icon: '🏆', title: 'Recognition and Rewards', text: 'Performance-based recognition systems that acknowledge outstanding contributions and provide pathways for advancement and increased responsibilities.' },
+];
+
+function WhyWorkCards() {
+  const gridRef = useRef(null);
+
+  useEffect(() => {
+    const cards = gridRef.current?.querySelectorAll('.why-card');
+    if (!cards) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('why-card--visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+    cards.forEach((card) => observer.observe(card));
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div className="why-cards-grid" ref={gridRef}>
+      {WHY_CARDS.map((card, i) => (
+        <div className="why-card" key={card.title} style={{ '--delay': `${i * 0.1}s` }}>
+          <div className="why-card-icon">{card.icon}</div>
+          <div className="why-card-accent" />
+          <h3>{card.title}</h3>
+          <p>{card.text}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 function Careers() {
   return (
@@ -6,81 +50,40 @@ function Careers() {
       <div className="page-header">
         <div className="container">
           <h1>Careers at Udugiri Infratech</h1>
-          <p>Join Our Team of Innovators and Professionals</p>
+          <p>Join our team of innovators and professionals</p>
         </div>
       </div>
 
       <section className="page-section">
         <div className="container">
           <div className="content-section">
+            <span className="section-label">Join Us</span>
             <h2>Build Your Career With Us</h2>
             <p>
-              At Udugiri Infratech, we recognize that our greatest asset is our people. We are constantly seeking 
-              talented, motivated individuals who share our passion for excellence and innovation in infrastructure 
-              and technology services. If you're looking for a career that offers professional growth, challenging 
-              projects, and the opportunity to make a meaningful impact, we invite you to explore opportunities 
+              At Udugiri Infratech, we recognize that our greatest asset is our people. We are constantly seeking
+              talented, motivated individuals who share our passion for excellence and innovation in infrastructure
+              and technology services. If you're looking for a career that offers professional growth, challenging
+              projects, and the opportunity to make a meaningful impact, we invite you to explore opportunities
               with us.
             </p>
             <p>
-              Our organization provides a dynamic work environment where creativity is encouraged, expertise is 
-              valued, and contributions are recognized. We believe in nurturing talent, fostering collaboration, 
-              and creating pathways for career advancement that align with both organizational goals and individual 
+              Our organization provides a dynamic work environment where creativity is encouraged, expertise is
+              valued, and contributions are recognized. We believe in nurturing talent, fostering collaboration,
+              and creating pathways for career advancement that align with both organizational goals and individual
               aspirations.
             </p>
           </div>
 
           <div className="content-section">
+            <span className="section-label">Perks &amp; Benefits</span>
             <h2>Why Work With Udugiri Infratech?</h2>
-            <div className="cards-grid">
-              <div className="card">
-                <h3>Professional Growth</h3>
-                <p>
-                  Access to continuous learning opportunities, skill development programs, and exposure to diverse 
-                  projects that enhance your professional capabilities and career trajectory.
-                </p>
-              </div>
-              <div className="card">
-                <h3>Innovative Projects</h3>
-                <p>
-                  Work on cutting-edge infrastructure and technology initiatives that challenge conventional 
-                  approaches and allow you to apply the latest tools and methodologies.
-                </p>
-              </div>
-              <div className="card">
-                <h3>Collaborative Culture</h3>
-                <p>
-                  Be part of a team-oriented environment where knowledge sharing, mutual respect, and collective 
-                  problem-solving drive success and create a positive workplace atmosphere.
-                </p>
-              </div>
-              <div className="card">
-                <h3>Competitive Compensation</h3>
-                <p>
-                  Receive fair, market-competitive remuneration packages that recognize your skills, experience, 
-                  and contributions to organizational success.
-                </p>
-              </div>
-              <div className="card">
-                <h3>Work-Life Balance</h3>
-                <p>
-                  Enjoy policies and practices that support healthy work-life integration, understanding that 
-                  personal well-being contributes to professional excellence.
-                </p>
-              </div>
-              <div className="card">
-                <h3>Recognition and Rewards</h3>
-                <p>
-                  Performance-based recognition systems that acknowledge outstanding contributions and provide 
-                  pathways for advancement and increased responsibilities.
-                </p>
-              </div>
-            </div>
+            <WhyWorkCards />
           </div>
 
           <div className="content-section">
             <h2>Our Work Culture</h2>
             <p>
-              Udugiri Infratech fosters a culture built on core values of integrity, excellence, innovation, and 
+              Udugiri Infratech fosters a culture built on core values of integrity, excellence, innovation, and
               collaboration. We believe in:
             </p>
             <ul>
@@ -96,7 +99,7 @@ function Careers() {
           <div className="content-section">
             <h2>Current Opportunities</h2>
             <p>
-              We regularly seek qualified professionals across various disciplines. Current and upcoming opportunities 
+              We regularly seek qualified professionals across various disciplines. Current and upcoming opportunities
               include positions in:
             </p>
 
@@ -182,7 +185,7 @@ function Careers() {
           <div className="content-section">
             <h2>Internship and Training Programs</h2>
             <p>
-              We also offer internship opportunities for students and recent graduates seeking practical experience 
+              We also offer internship opportunities for students and recent graduates seeking practical experience
               in surveying, GIS, civil engineering, and software development. Our internship programs provide:
             </p>
             <ul>
@@ -204,8 +207,8 @@ function Careers() {
               <li><strong>Attachments:</strong> Resume/CV in PDF format, cover letter (optional but recommended)</li>
             </ul>
             <p>
-              We review applications on an ongoing basis and maintain a database of qualified candidates for future 
-              opportunities. Even if there isn't a current opening that matches your profile, we encourage you to 
+              We review applications on an ongoing basis and maintain a database of qualified candidates for future
+              opportunities. Even if there isn't a current opening that matches your profile, we encourage you to
               submit your resume for consideration when suitable positions become available.
             </p>
           </div>
@@ -213,9 +216,9 @@ function Careers() {
           <div className="content-section">
             <h2>Join Us in Shaping the Future</h2>
             <p>
-              At Udugiri Infratech, every team member plays a vital role in our success and growth. We're not just 
-              offering jobs; we're providing careers where you can develop your skills, contribute to meaningful 
-              projects, and be part of an organization that values your potential. If you're ready to take the next 
+              At Udugiri Infratech, every team member plays a vital role in our success and growth. We're not just
+              offering jobs; we're providing careers where you can develop your skills, contribute to meaningful
+              projects, and be part of an organization that values your potential. If you're ready to take the next
               step in your professional journey, we look forward to hearing from you.
             </p>
           </div>

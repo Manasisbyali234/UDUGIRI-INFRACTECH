@@ -5,47 +5,50 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === '/';
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    if (isHome) {
-      window.addEventListener('scroll', handleScroll);
-    } else {
-      setScrolled(false); // Reset scrolled state if not on home
-    }
-
+    const handleScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [isHome]);
+  }, []);
+
+  const close = () => setIsOpen(false);
+  const isActive = (path) => location.pathname === path;
 
   return (
-    <header className={`${scrolled || !isHome ? 'scrolled' : ''}`}>
+    <header className={scrolled ? 'scrolled' : ''}>
       <div className="container">
         <div className="header-content">
-          <div className="logo">
+          <Link to="/" className="logo" onClick={close}>
             <img src="/logo.jpg" alt="Udugiri Infratech" />
-          </div>
-          <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div className="logo-text">
+              <span className="logo-name">Udugiri Infratech</span>
+              <span className="logo-tagline">Survey · GIS · Engineering</span>
+            </div>
+          </Link>
+
+          <button
+            className={`hamburger${isOpen ? ' open' : ''}`}
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Menu"
+          >
+            <span /><span /><span />
           </button>
+
           <nav className={isOpen ? 'active' : ''}>
+            {isOpen && <div className="nav-overlay" onClick={close} />}
             <ul>
-              <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-              <li><Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link></li>
-              <li><Link to="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
-              <li><Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link></li>
-              <li><Link to="/careers" onClick={() => setIsOpen(false)}>Careers</Link></li>
-              <li><Link to="/enquiry" onClick={() => setIsOpen(false)}>Enquiry</Link></li>
-              <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+              {[['/', 'Home'], ['/about', 'About'], ['/services', 'Services'],
+                ['/projects', 'Projects'], ['/careers', 'Careers'], ['/contact', 'Contact']].map(([path, label]) => (
+                <li key={path}>
+                  <Link
+                    to={path}
+                    onClick={close}
+                    className={isActive(path) ? 'nav-active' : ''}
+                  >{label}</Link>
+                </li>
+              ))}
+              <li className="nav-cta"><Link to="/enquiry" onClick={close}>Get Started ↗</Link></li>
             </ul>
           </nav>
         </div>

@@ -39,13 +39,14 @@ function Enquiry() {
       <div className="page-header">
         <div className="container">
           <h1>Make an Enquiry</h1>
-          <p>Let's Discuss Your Project Requirements</p>
+          <p>Let's discuss your project requirements</p>
         </div>
       </div>
 
       <section className="page-section">
         <div className="container">
           <div className="content-section">
+            <span className="section-label">Get In Touch</span>
             <h2>Connect With Us</h2>
             <p>
               At Udugiri Infratech, we believe every successful project begins with clear communication and 
@@ -61,9 +62,11 @@ function Enquiry() {
           </div>
 
           <div className="content-section">
+            <span className="section-label">Benefits</span>
             <h2>Why Reach Out to Us?</h2>
             <div className="cards-grid">
               <div className="card">
+                <div style={{fontSize:'1.75rem',marginBottom:'0.5rem'}}>💼</div>
                 <h3>Expert Consultation</h3>
                 <p>
                   Receive professional guidance from experienced specialists who understand the technical and 
@@ -71,6 +74,7 @@ function Enquiry() {
                 </p>
               </div>
               <div className="card">
+                <div style={{fontSize:'1.75rem',marginBottom:'0.5rem'}}>🎯</div>
                 <h3>Customized Solutions</h3>
                 <p>
                   We don't believe in one-size-fits-all approaches. Every enquiry receives personalized attention 
@@ -78,6 +82,7 @@ function Enquiry() {
                 </p>
               </div>
               <div className="card">
+                <div style={{fontSize:'1.75rem',marginBottom:'0.5rem'}}>💬</div>
                 <h3>Transparent Communication</h3>
                 <p>
                   Clear, honest discussions about project scope, timelines, costs, and deliverables ensure you 
@@ -85,6 +90,7 @@ function Enquiry() {
                 </p>
               </div>
               <div className="card">
+                <div style={{fontSize:'1.75rem',marginBottom:'0.5rem'}}>⚡</div>
                 <h3>Quick Response</h3>
                 <p>
                   We value your time. Our team commits to responding to enquiries promptly, typically within 

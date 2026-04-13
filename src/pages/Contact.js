@@ -31,13 +31,14 @@ function Contact() {
       <div className="page-header">
         <div className="container">
           <h1>Contact Us</h1>
-          <p>We're Here to Help - Get in Touch Today</p>
+          <p>We're here to help — get in touch today</p>
         </div>
       </div>
 
       <section className="page-section">
         <div className="container">
           <div className="content-section">
+            <span className="section-label">Reach Out</span>
             <h2>Connect With Udugiri Infratech</h2>
             <p>
               We value open communication and are committed to providing prompt, helpful responses to all inquiries. 
@@ -51,72 +52,49 @@ function Contact() {
           </div>
 
           <div className="content-section">
+            <span className="section-label">Find Us</span>
             <h2>Contact Information</h2>
-            <div className="cards-grid">
-              <div className="card">
+            <div className="contact-info-grid">
+              <div className="contact-info-card">
+                <div className="contact-card-icon">🏢</div>
                 <h3>Corporate Office</h3>
-                <p><strong>Address:</strong></p>
-                <p>Udugiri Infratech</p>
-                <p>#196, 1st Cross Link Road</p>
-                <p>Malleshwaram</p>
-                <p>Bangalore - 560003</p>
-                <p>India</p>
+                <address>
+                  Udugiri Infratech<br />
+                  #196, 1st Cross Link Road<br />
+                  Malleshwaram, Bangalore – 560003<br />
+                  India
+                </address>
+                <div className="gst-badge">
+                  <span className="gst-label">GST</span>
+                  <span className="gst-number">29CAHPR7591G1ZZ</span>
+                </div>
               </div>
-              <div className="card">
+              <div className="contact-info-card">
+                <div className="contact-card-icon">📧</div>
                 <h3>Email</h3>
-                <p><strong>General Inquiries:</strong></p>
-                <p>udugiriengineer@gmail.com</p>
-                <p><strong>Business Development:</strong></p>
-                <p>udugiriengineer@gmail.com</p>
-                <p><strong>Career Opportunities:</strong></p>
-                <p>udugiriengineer@gmail.com</p>
+                <a href="mailto:udugiriengineer@gmail.com">udugiriengineer@gmail.com</a>
               </div>
-              <div className="card">
+              <div className="contact-info-card">
+                <div className="contact-card-icon">📞</div>
                 <h3>Phone</h3>
-                <p><strong>Main Office:</strong></p>
-                <p>+91-7899213066/9731981092</p>
-                <p><strong>Alternative:</strong></p>
-                <p>7899213066/9731981092</p>
+                <a href="tel:+917899213066">+91 78992 13066</a>
+                <a href="tel:+919731981092">+91 97319 81092</a>
               </div>
-              <div className="card">
+              <div className="contact-info-card">
+                <div className="contact-card-icon">🕐</div>
                 <h3>Business Hours</h3>
-                <p><strong>Monday - Friday:</strong></p>
-                <p>9:00 AM - 6:00 PM</p>
-                <p><strong>Saturday:</strong></p>
-                <p>9:00 AM - 1:00 PM</p>
-                <p><strong>Sunday:</strong></p>
-                <p>Closed</p>
+                <div className="hours-row"><span>Mon – Fri</span><span>9:00 AM – 6:00 PM</span></div>
+                <div className="hours-row"><span>Saturday</span><span>9:00 AM – 1:00 PM</span></div>
+                <div className="hours-row"><span>Sunday</span><span className="closed">Closed</span></div>
               </div>
             </div>
           </div>
 
           <div className="content-section">
             <h2>Department-Specific Contacts</h2>
-            
-            <h3>Project Inquiries</h3>
-            <p>
-              For questions about ongoing projects, project status updates, or technical clarifications related to 
-              active engagements, please contact your designated project manager or reach out to our project 
-              coordination team at udugiriengineer@gmail.com
-            </p>
-
-            <h3>Technical Support</h3>
-            <p>
-              If you require technical assistance with software applications, GIS systems, or other technology 
-              solutions provided by us, our technical support team is available at udugiriengineer@gmail.com
-            </p>
-
-            <h3>Business Partnerships</h3>
-            <p>
-              Organizations interested in exploring partnership opportunities, collaborations, or vendor relationships 
-              can contact our business development team at udugiriengineer@gmail.com
-            </p>
-
-            <h3>Media and Press</h3>
-            <p>
-              For media inquiries, press releases, or interview requests, please contact our communications team at 
-              udugiriengineer@gmail.com
-            </p>
+            <p>For all inquiries — project coordination, technical support, business partnerships, or media — reach us at:</p>
+            <p><strong>📧 udugiriengineer@gmail.com</strong></p>
+            <p><strong>📞 +91 78992 13066 / +91 97319 81092</strong></p>
           </div>
 
           <div className="form-container">
@@ -221,7 +199,7 @@ function Contact() {
             <p>
               We continuously strive to improve our services and client experience. If you have feedback, suggestions, 
               or testimonials about your experience working with Udugiri Infratech, we'd love to hear from you. 
-              Please send your thoughts to udugiriengineer@gmail.com
+              Please send your thoughts to <strong>udugiriengineer@gmail.com</strong>
             </p>
           </div>
 
