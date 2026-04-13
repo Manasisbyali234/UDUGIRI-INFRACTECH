@@ -1148,6 +1148,11 @@ footer {
 
 /* ── Tablet portrait (≤768px) ── */
 @media (max-width: 768px) {
+  /* About text readability */
+  .about-text-col p { font-size: 0.93rem; line-height: 1.75; }
+  .about-vision-text p { font-size: 0.93rem; line-height: 1.75; }
+  .about-hero-header h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); }
+  .about-hero-header p { font-size: 0.95rem; }
   /* Header & Nav */
   .hamburger { display: flex; }
 
@@ -1235,15 +1240,30 @@ footer {
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .contact-info-grid { grid-template-columns: 1fr 1fr; }
 
-  /* About */
+  /* About layout */
   .about-split-layout,
-  .about-vision-inner { grid-template-columns: 1fr; gap: 2rem; }
-  .about-split-layout.reverse { direction: ltr; }
-  .about-vision-section { padding: 2.5rem 1.5rem; }
+  .about-vision-inner { grid-template-columns: 1fr; gap: 1.75rem; }
+  .about-split-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    direction: ltr !important;
+  }
+  .about-split-layout .about-image-col { order: 1 !important; }
+  .about-split-layout .about-text-col { order: 2 !important; }
+  .about-vision-section { padding: 2.5rem 1.5rem; border-radius: 16px; }
   .vision-rings { width: 200px; height: 200px; }
   .vr-center { inset: 64px; font-size: 1.5rem; }
   .strengths-section { padding: 2.5rem 1.25rem; }
   .strengths-title { font-size: 1.8rem; }
+  .about-reveal-section { margin: 2.5rem 0; }
+  .about-img-frame img { height: 240px; }
+  .about-section-title { font-size: 1.55rem; }
+  .mission-commitments { gap: 0.6rem; }
+  .mission-item { padding: 0.75rem 0.9rem; gap: 0.75rem; }
+  .mission-item strong { font-size: 0.88rem; }
+  .mission-item p { font-size: 0.82rem; }
+  .vision-pillars { gap: 0.4rem; }
+  .vision-pillar { font-size: 0.75rem; padding: 0.35rem 0.85rem; }
 
   /* Exec list */
   .exec-item-left { width: 40px; }
@@ -1256,6 +1276,11 @@ footer {
 
 /* ── Mobile (≤480px) ── */
 @media (max-width: 480px) {
+  /* About text readability */
+  .about-text-col p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 0.85rem; }
+  .about-vision-text p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 0.85rem; }
+  .about-hero-header h1 { font-size: clamp(1.4rem, 6vw, 1.9rem); }
+  .about-hero-header p { font-size: 0.88rem; }
   /* Header */
   .logo-tagline { display: none; }
   .logo-name { font-size: 0.95rem; }
@@ -1310,11 +1335,40 @@ footer {
   .footer-social a { width: 32px; height: 32px; }
   .footer-gst { font-size: 0.78rem !important; }
 
-  /* About */
-  .about-img-frame img { height: 220px; }
+  /* About layout */
+  .about-img-frame img { height: 200px; }
   .about-stat-row { justify-content: center; }
   .about-vision-visual { display: none; }
-  .about-hero-header { padding: 4rem 0 3rem; }
+  .about-vision-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+  }
+  .about-vision-text { width: 100%; }
+  .about-hero-header { padding: 3.5rem 0 2.5rem; }
+  .about-reveal-section { margin: 1.75rem 0; }
+  .about-vision-section { padding: 1.75rem 1rem; border-radius: 12px; }
+  .about-vision-inner {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .about-vision-text { width: 100%; }
+  .about-split-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    direction: ltr !important;
+    gap: 1.25rem;
+  }
+  .about-split-layout .about-image-col { order: 1 !important; }
+  .about-split-layout .about-text-col { order: 2 !important; }
+  .about-section-title { font-size: 1.35rem; padding-bottom: 0.6rem; margin-bottom: 1rem; }
+  .about-section-badge { font-size: 0.7rem; padding: 0.25rem 0.75rem; }
+  .mission-item { gap: 0.65rem; padding: 0.65rem 0.8rem; }
+  .mission-item-icon { width: 28px; height: 28px; font-size: 1rem; flex-shrink: 0; }
+  .mission-item strong { font-size: 0.83rem; }
+  .mission-item p { font-size: 0.78rem; line-height: 1.55; }
+  .vision-pillars { gap: 0.3rem; margin-top: 1rem; }
+  .vision-pillar { font-size: 0.7rem; padding: 0.28rem 0.7rem; }
 
   /* Exec list */
   .exec-item-body { padding: 1rem; }
@@ -1350,7 +1404,16 @@ footer {
   .hv-title { font-size: 0.68rem; }
   .page-header h1 { font-size: 1.4rem; }
   .content-section h2 { font-size: 1.35rem; }
-  .about-section-title { font-size: 1.35rem; }
+  .about-section-title { font-size: 1.2rem; }
+  .about-hero-header h1 { font-size: 1.3rem; }
+  .about-hero-header p { font-size: 0.82rem; }
+  .about-text-col p { font-size: 0.82rem; }
+  .about-vision-text p { font-size: 0.82rem; }
+  .about-vision-section { padding: 1.5rem 0.9rem; }
+  .mission-item { gap: 0.5rem; padding: 0.6rem 0.7rem; }
+  .mission-item strong { font-size: 0.8rem; }
+  .mission-item p { font-size: 0.75rem; }
+  .about-img-frame img { height: 170px; }
   .footer-content { gap: 1.5rem; }
   .about-stat-pill { min-width: 76px; padding: 0.6rem 0.9rem; }
   .about-stat-pill strong { font-size: 1.2rem; }
