@@ -35,8 +35,8 @@ function Header() {
             <span /><span /><span />
           </button>
 
+          {isOpen && <div className="nav-overlay" onClick={close} />}
           <nav className={isOpen ? 'active' : ''}>
-            {isOpen && <div className="nav-overlay" onClick={close} />}
             <ul>
               {[['/', 'Home'], ['/about', 'About'], ['/services', 'Services'],
                 ['/projects', 'Projects'], ['/careers', 'Careers'], ['/contact', 'Contact']].map(([path, label]) => (
