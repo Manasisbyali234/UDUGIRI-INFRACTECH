@@ -45,7 +45,7 @@ function Footer() {
         </div>
         <div className="footer-bottom">
           <p>© 2024 Udugiri Infratech. All rights reserved.</p>
-          <p>Surveying · GIS · Engineering · Software</p>
+          <p>Surveying · GIS · Engineering</p>
         </div>
       </div>
     </footer>

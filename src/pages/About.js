@@ -66,7 +66,7 @@ function About() {
                 <p>
                   Our journey reflects a steadfast commitment to excellence, driven by a team of dedicated
                   professionals who bring together diverse expertise in surveying, geographic information systems,
-                  civil engineering, and software development.
+                  and civil engineering.
                 </p>
                 <p>
                   Operating at the intersection of engineering precision and digital innovation, Udugiri Infratech
@@ -212,8 +212,8 @@ function About() {
                 <p>
                   The strength of Udugiri Infratech lies in our talented team of professionals who bring
                   together diverse skills, extensive experience, and unwavering commitment to excellence.
-                  Our workforce includes licensed surveyors, GIS specialists, civil engineers, software
-                  developers, and project managers.
+                  Our workforce includes licensed surveyors, GIS specialists, civil engineers,
+                  and project managers.
                 </p>
                 <p>
                   We invest significantly in training and development, ensuring our team remains updated

@@ -52,7 +52,7 @@ const detailedCards = [
 ];
 
 const serviceTags = [
-  'Building Designs', 'GPS / Total Station Survey', 'Software Development',
+  'Building Designs', 'GPS / Total Station Survey',
   'GIS Based Ward Delimitation', 'Construction', 'DPR for Water Supply',
   'Layout Designs', 'Roads & Drains', 'DGPS Survey',
   'GIS Based Master Plan', 'Bridges / Culverts', 'Layout Development',
@@ -91,18 +91,6 @@ const textSections = [
       { h: 'Water Resources Engineering', p: 'Design and planning for water supply systems, irrigation networks, drainage infrastructure, and flood management projects. Our solutions address water conservation and efficient distribution.' },
       { h: 'Transportation Engineering', p: 'Traffic studies, road network planning, intersection design, and transportation system optimization. We develop solutions that improve mobility and reduce congestion.' },
       { h: 'Project Management and Supervision', p: 'End-to-end project management services including planning, scheduling, quality control, and site supervision. We ensure projects are executed according to specifications, budgets, and timelines.' },
-    ],
-  },
-  {
-    title: 'Software Development',
-    intro: 'Our software development team creates custom applications and digital solutions that address specific business requirements. We leverage modern technologies and agile methodologies to deliver robust, scalable software products.',
-    items: [
-      { h: 'Custom Application Development', p: 'Tailored software solutions designed to meet unique organizational needs. From enterprise applications to specialized tools, we develop software that enhances operational efficiency and productivity.' },
-      { h: 'Web Application Development', p: 'Responsive, user-friendly web applications built using modern frameworks and technologies. Our web solutions provide seamless experiences across devices and platforms.' },
-      { h: 'Mobile Application Development', p: 'Native and cross-platform mobile applications for iOS and Android. We create intuitive mobile solutions that extend business capabilities to smartphones and tablets.' },
-      { h: 'Database Design and Management', p: 'Efficient database architecture, implementation, and optimization services. We ensure data integrity, security, and performance for mission-critical applications.' },
-      { h: 'System Integration', p: 'Seamless integration of disparate systems and applications, enabling data flow and process automation across organizational boundaries.' },
-      { h: 'Software Maintenance and Support', p: 'Ongoing maintenance, updates, and technical support ensuring software systems remain functional, secure, and aligned with evolving requirements.' },
     ],
   },
 ];

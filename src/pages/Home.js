@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import ScrollSection from '../components/ScrollSection';
 import { heroStagger, heroItem, staggerContainer, staggerItem, fadeUp, viewportOptions } from '../hooks/useScrollAnimation';
 
-const typewriterWords = ['Surveying', 'GIS Mapping', 'Civil Engineering', 'Smart Software'];
+const typewriterWords = ['Surveying', 'GIS Mapping', 'Civil Engineering'];
 
 const services = [
-  'Building Designs', 'GPS / Total Station Survey', 'Software Development',
+  'Building Designs', 'GPS / Total Station Survey',
   'GIS Based Ward Delimitation', 'Construction', 'DPR for Water Supply',
   'Layout Designs', 'Roads & Drains', 'DGPS Survey',
   'GIS Based Master Plan', 'Bridges / Culverts', 'Layout Development',
@@ -22,7 +22,7 @@ const strengths = [
   },
   {
     icon: '👷', title: 'Experienced Professionals',
-    text: 'Highly qualified engineers, surveyors, GIS specialists, and software developers with extensive industry expertise.',
+    text: 'Highly qualified engineers, surveyors, and GIS specialists with extensive industry expertise.',
     tag: 'Multi-Domain Expertise', color: '#0891b2',
   },
   {
@@ -91,7 +91,7 @@ function Home() {
                 <span className="hero-gradient-text">Across India</span>
               </motion.h1>
               <motion.p variants={heroItem}>
-                End-to-end solutions in Surveying, GIS, Civil Engineering &amp; Software — delivered with accuracy, speed, and integrity.
+                End-to-end solutions in Surveying, GIS, and Civil Engineering — delivered with accuracy, speed, and integrity.
               </motion.p>
               <motion.div variants={heroItem} className="hero-actions">
                 <Link to="/enquiry"><button className="cta-button cta-pulse">Get a Free Quote</button></Link>
@@ -116,7 +116,7 @@ function Home() {
                     { icon: '🗺️', label: 'GIS Mapping', val: '98%', color: '#60a5fa' },
                     { icon: '📐', label: 'Survey Accuracy', val: '99.7%', color: '#34d399' },
                     { icon: '🏗️', label: 'Projects On-Time', val: '95%', color: '#a78bfa' },
-                    { icon: '💻', label: 'Software Delivery', val: '100%', color: '#fb923c' },
+
                   ].map(({ icon, label, val, color }) => (
                     <div className="hv-metric" key={label}>
                       <span className="hv-icon">{icon}</span>
@@ -157,7 +157,7 @@ function Home() {
             <h2>Welcome to Udugiri Infratech</h2>
             <p>
               Udugiri Infratech is a premier provider of comprehensive infrastructure and technology solutions,
-              delivering exceptional services across surveying, GIS, civil engineering, and software development.
+              delivering exceptional services across surveying, GIS, and civil engineering.
               Our multidisciplinary approach combines technical expertise with cutting-edge technology to serve
               government agencies, private enterprises, and infrastructure development organizations.
             </p>
@@ -219,8 +219,8 @@ function Home() {
             <p>
               At Udugiri Infratech, our integrated service portfolio enables clients to access multiple specialized
               services under one roof — streamlining project coordination and ensuring consistency across all
-              deliverables. Whether you need topographic surveys, GIS mapping, infrastructure engineering, or
-              custom software, our team brings the expertise and dedication to transform your vision into reality.
+              deliverables. Whether you need topographic surveys, GIS mapping, or infrastructure engineering,
+              our team brings the expertise and dedication to transform your vision into reality.
             </p>
             <div style={{ marginTop: '1.5rem' }}>
               <Link to="/enquiry"><button className="cta-button">Start Your Project →</button></Link>

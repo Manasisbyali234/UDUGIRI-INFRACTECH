@@ -130,16 +130,6 @@ function Careers() {
               <li>Site Supervisors</li>
             </ul>
 
-            <h3>Software Development</h3>
-            <ul>
-              <li>Full Stack Developers</li>
-              <li>Frontend and Backend Developers</li>
-              <li>Mobile Application Developers</li>
-              <li>Database Administrators</li>
-              <li>Software Quality Assurance Engineers</li>
-              <li>UI/UX Designers</li>
-            </ul>
-
             <h3>Support Functions</h3>
             <ul>
               <li>Business Development Executives</li>
@@ -186,7 +176,7 @@ function Careers() {
             <h2>Internship and Training Programs</h2>
             <p>
               We also offer internship opportunities for students and recent graduates seeking practical experience
-              in surveying, GIS, civil engineering, and software development. Our internship programs provide:
+              in surveying, GIS, and civil engineering. Our internship programs provide:
             </p>
             <ul>
               <li>Hands-on experience with real projects and industry-standard tools</li>
