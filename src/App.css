@@ -1290,7 +1290,7 @@ footer {
   /* Header */
   .logo-tagline { display: none; }
   .logo-name { font-size: 0.95rem; }
-  .logo img { height: 36px; }
+  .logo img { height: 60px; }
 
   /* Hero */
   .hero { padding: 4.5rem 0 3rem; }
