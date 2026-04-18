@@ -412,7 +412,7 @@ nav ul li.nav-cta a:hover {
   background: #1a56db;
   color: white;
   padding: 0.85rem 2rem;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
