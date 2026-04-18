@@ -959,11 +959,11 @@ nav ul li.nav-cta a:hover {
 
 /* ── Footer ── */
 footer {
-  background: #0f1f3d;
-  color: #94a3b8;
+  background: #f1f5f9;
+  color: #4a5568;
   padding: 4rem 0 0;
 }
-.footer-logo { height: 56px; width: auto; object-fit: contain; margin-bottom: 1rem; filter: brightness(0) invert(1); opacity: 0.9; }
+.footer-logo { height: 120px; width: auto; object-fit: contain; margin-bottom: 1rem; }
 
 .footer-content {
   display: grid;
@@ -972,11 +972,11 @@ footer {
   margin-bottom: 3rem;
   text-align: left;
 }
-.footer-section h3 { color: #f1f5f9; font-size: 1rem; font-weight: 700; margin-bottom: 1.25rem; letter-spacing: 0.02em; }
+.footer-section h3 { color: #0f1f3d; font-size: 1rem; font-weight: 700; margin-bottom: 1.25rem; letter-spacing: 0.02em; }
 .footer-section p,
-.footer-section a { color: #94a3b8; text-decoration: none; display: block; margin-bottom: 0.6rem; font-size: 0.9rem; transition: color 0.2s; line-height: 1.6; }
+.footer-section a { color: #4a5568; text-decoration: none; display: block; margin-bottom: 0.6rem; font-size: 0.9rem; transition: color 0.2s; line-height: 1.6; }
 .footer-section a:hover { color: #60a5fa; }
-.footer-brand p { font-size: 0.9rem; line-height: 1.7; margin-top: 0.5rem; }
+.footer-brand p { font-size: 0.9rem; line-height: 1.7; margin-top: 0.5rem; color: #64748b; }
 
 .footer-social {
   display: flex;
@@ -992,9 +992,9 @@ footer {
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.12);
-  color: #94a3b8;
+  background: rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.1);
+  color: #4a5568;
   transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
   margin-bottom: 0;
 }
@@ -1007,7 +1007,7 @@ footer {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid #e2e8f0;
   padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
@@ -1094,9 +1094,9 @@ footer {
 .footer-gst {
   margin-top: 0.75rem;
   padding-top: 0.75rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid #e2e8f0;
   font-size: 0.82rem !important;
-  color: #cbd5e1 !important;
+  color: #64748b !important;
   letter-spacing: 0.03em;
 }
 
