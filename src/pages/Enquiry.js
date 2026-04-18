@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Enquiry() {
+  const formRef = useRef();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -9,6 +11,8 @@ function Enquiry() {
     service: '',
     message: ''
   });
+  const [pdfFile, setPdfFile] = useState(null);
+  const [sending, setSending] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,17 +25,61 @@ function Enquiry() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file && file.type !== 'application/pdf') {
+      alert('Please upload a PDF file only.');
+      e.target.value = '';
+      return;
+    }
+    setPdfFile(file || null);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert('Thank you for your enquiry! We will contact you shortly.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      organization: '',
-      service: '',
-      message: ''
-    });
+    setSending(true);
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      organization: formData.organization || 'N/A',
+      service: formData.service,
+      message: formData.message,
+      to_email: 'udugiriengineer@gmail.com',
+    };
+
+    // If PDF attached, convert to base64 and include
+    if (pdfFile) {
+      const reader = new FileReader();
+      reader.onload = async () => {
+        templateParams.pdf_content = reader.result; // base64 data URL
+        templateParams.pdf_name = pdfFile.name;
+        await sendEmail(templateParams);
+      };
+      reader.readAsDataURL(pdfFile);
+    } else {
+      await sendEmail(templateParams);
+    }
+  };
+
+  const sendEmail = async (templateParams) => {
+    try {
+      await emailjs.send(
+        'YOUR_SERVICE_ID',       // Replace with your EmailJS Service ID
+        'YOUR_TEMPLATE_ID',      // Replace with your EmailJS Template ID
+        templateParams,
+        'YOUR_PUBLIC_KEY'        // Replace with your EmailJS Public Key
+      );
+      alert('Thank you for your enquiry! We will contact you shortly.');
+      setFormData({ name: '', email: '', phone: '', organization: '', service: '', message: '' });
+      setPdfFile(null);
+      formRef.current.reset();
+    } catch (error) {
+      alert('Failed to send enquiry. Please try again or email us directly at udugiriengineer@gmail.com');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -114,7 +162,7 @@ function Enquiry() {
 
           <div className="form-container">
             <h2>Submit Your Enquiry</h2>
-            <form onSubmit={handleSubmit}>
+            <form ref={formRef} onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Full Name *</label>
                 <input
@@ -172,12 +220,15 @@ function Enquiry() {
                   required
                 >
                   <option value="">Select a service</option>
-                  <option value="surveying">Surveying Services</option>
                   <option value="gis">GIS Solutions</option>
-                  <option value="engineering">Infrastructure Engineering</option>
-                  <option value="software">Software Development</option>
-                  <option value="multiple">Multiple Services</option>
-                  <option value="other">Other</option>
+                  <option value="dpr">DPR for Roads, Drains, etc.</option>
+                  <option value="layout">Layout Design & Approval</option>
+                  <option value="building">Building Design & Approval</option>
+                  <option value="software">Software / Website Development</option>
+                  <option value="dgps">DGPS / TS Surveying Services</option>
+                  <option value="architecture">Architecture & Landscape Design</option>
+                  <option value="infrastructure">Infrastructure Services</option>
+                  <option value="others">Others</option>
                 </select>
               </div>
 
@@ -193,8 +244,21 @@ function Enquiry() {
                 ></textarea>
               </div>
 
-              <button type="submit" className="submit-button">
-                Submit Enquiry
+              <div className="form-group">
+                <label htmlFor="pdf">Attach PDF <span style={{fontWeight:'normal',color:'#888'}}>(optional — you may attach a project document or requirement sheet)</span></label>
+                <input
+                  type="file"
+                  id="pdf"
+                  accept="application/pdf"
+                  onChange={handleFileChange}
+                />
+                {pdfFile && (
+                  <p style={{marginTop:'0.4rem',fontSize:'0.85rem',color:'#555'}}>📎 {pdfFile.name}</p>
+                )}
+              </div>
+
+              <button type="submit" className="submit-button" disabled={sending}>
+                {sending ? 'Sending...' : 'Submit Enquiry'}
               </button>
             </form>
           </div>

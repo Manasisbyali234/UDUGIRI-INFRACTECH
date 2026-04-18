@@ -7,11 +7,16 @@ import { heroStagger, heroItem, staggerContainer, staggerItem, fadeUp, viewportO
 const typewriterWords = ['Surveying', 'GIS Mapping', 'Civil Engineering'];
 
 const services = [
-  'Building Designs', 'GPS / Total Station Survey',
-  'GIS Based Ward Delimitation', 'Construction', 'DPR for Water Supply',
-  'Layout Designs', 'Roads & Drains', 'DGPS Survey',
-  'GIS Based Master Plan', 'Bridges / Culverts', 'Layout Development',
-  'UGD / Storm Water Drains', 'GIS Projects',
+  'GIS-based Master Plan',
+  'GIS Projects (Cadastral mapping, etc.)',
+  'Layout Design & Plan Approval',
+  'Building Design & Plan Approval',
+  'DGPS / Total Station Survey',
+  'DPR for Water Supply, Roads, Drains, etc.',
+  'Capacity Building',
+  'Software Development / Website Development',
+  'Architecture & Landscape Design',
+  'All Other Engineering Works',
 ];
 
 const strengths = [
@@ -199,10 +204,11 @@ function Home() {
             <h2 className="section-title-center">Services Offered</h2>
             <motion.div className="services-highlight-grid" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOptions}>
               {services.map((svc) => (
-                <motion.div key={svc} variants={staggerItem}>
-                  <Link to="/enquiry" style={{ textDecoration: 'none' }}>
+                <motion.div key={svc} variants={staggerItem} style={{ display: 'flex' }}>
+                  <Link to="/enquiry" style={{ textDecoration: 'none', width: '100%' }}>
                     <motion.span
                       className="service-tag"
+                      style={{ width: '100%' }}
                       whileHover={{ scale: 1.04, transition: { duration: 0.2 } }}
                       whileTap={{ scale: 0.97 }}
                     >{svc}</motion.span>
