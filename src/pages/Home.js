@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import CanonicalTag from '../components/CanonicalTag';
 import { motion } from 'framer-motion';
 import ScrollSection from '../components/ScrollSection';
 import { heroStagger, heroItem, staggerContainer, staggerItem, fadeUp, viewportOptions } from '../hooks/useScrollAnimation';
@@ -73,6 +74,7 @@ function Typewriter() {
 function Home() {
   return (
     <div>
+      <CanonicalTag />
       {/* Hero */}
       <section className="hero hero-pro">
         <div className="hero-grid-bg" />

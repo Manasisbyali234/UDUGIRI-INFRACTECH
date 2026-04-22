@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import AnimatedCard from '../components/AnimatedCard';
 import ScrollSection from '../components/ScrollSection';
 import { heroStagger, heroItem, staggerContainer, staggerItem, fadeUp, viewportOptions } from '../hooks/useScrollAnimation';
+import CanonicalTag from '../components/CanonicalTag';
 
 const consultancyCards = [
   {
@@ -103,6 +104,7 @@ const textSections = [
 function Services() {
   return (
     <div>
+      <CanonicalTag />
       {/* Page Header */}
       <div className="page-header">
         <div className="container">

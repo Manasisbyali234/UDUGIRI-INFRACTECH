@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import CanonicalTag from '../components/CanonicalTag';
 
 const WHY_CARDS = [
   { icon: '📈', title: 'Professional Growth', text: 'Access to continuous learning opportunities, skill development programs, and exposure to diverse projects that enhance your professional capabilities and career trajectory.' },
@@ -47,6 +48,7 @@ function WhyWorkCards() {
 function Careers() {
   return (
     <div>
+      <CanonicalTag />
       <div className="page-header">
         <div className="container">
           <h1>Careers at Udugiri Infratech</h1>

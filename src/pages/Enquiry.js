@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import CanonicalTag from '../components/CanonicalTag';
 
 function Enquiry() {
   const formRef = useRef();
@@ -84,6 +85,7 @@ function Enquiry() {
 
   return (
     <div>
+      <CanonicalTag />
       <div className="page-header">
         <div className="container">
           <h1>Make an Enquiry</h1>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CanonicalTag from '../components/CanonicalTag';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -28,6 +29,7 @@ function Contact() {
 
   return (
     <div>
+      <CanonicalTag />
       <div className="page-header">
         <div className="container">
           <h1>Contact Us</h1>

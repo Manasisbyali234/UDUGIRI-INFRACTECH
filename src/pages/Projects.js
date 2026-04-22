@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import CanonicalTag from '../components/CanonicalTag';
 
 const CAPABILITIES = [
   {
@@ -85,6 +86,7 @@ function ExecutionCapabilities() {
 function Projects() {
   return (
     <div>
+      <CanonicalTag />
       <div className="page-header">
         <div className="container">
           <h1>Our Projects</h1>

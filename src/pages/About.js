@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import CanonicalTag from '../components/CanonicalTag';
 
 function useReveal(threshold = 0.15) {
   const ref = useRef(null);
@@ -25,6 +26,7 @@ function About() {
 
   return (
     <div>
+      <CanonicalTag />
       <div className="page-header about-hero-header">
         <div className="about-header-bg">
           {[...Array(6)].map((_, i) => <span key={i} className={`about-orb about-orb-${i}`} />)}
